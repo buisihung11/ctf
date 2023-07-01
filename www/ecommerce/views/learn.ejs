@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include common/head %>
+</head>
+<body>
+    <% include common/navigation %>
+    <div class='container' style='min-height: 450px'><div class='row'><div class='col-md-12'>
+
+        <div class='row'>
+            <div class='col-md-3'>
+                <div class='list-group'>
+                    <h4>Navigator</h4>
+                    <% for (var featureKey in featuresNav) { %>
+                        <a href="/app/<%=featureKey%>" class='list-group-item'>
+                            <i class='fa fa-angle-double-right'></i> <%=featuresNav[featureKey]%>
+                        </a>
+                    <% } %>                    
+                </div>
+            </div>
+            <div class='col-md-9'>
+            </div>
+        </div>
+
+    </div></div></div>
+    <% include common/footer %>
+</body>
+</html>
